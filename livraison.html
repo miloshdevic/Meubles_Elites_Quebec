@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<!-- Karine Nguyen (20160036) et Milosh Devic (20158232) -->
+<!--Veuillez évaluer notre site avec Google Chrome-->
+
+<html lang="fr-ca">
+
+<head>
+    <title>Livraison</title>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" type = "text/css" href = "meubles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="logo.png"><img src="logo.png" alt="image de meubles dans un
+        magasin" class="logo"></a>
+        <h1>Meubles Élites Québec</h1>
+        <h4><i>Des meubles élites pour une société élite</i></h4>
+
+    </header>
+
+    <nav>
+
+        <p><b>
+            <a href="accueil.html" class="removelink">Accueil</a>&nbsp;&nbsp;
+            &nbsp;
+            <a href="design.html" class="removelink">Design</a>&nbsp;&nbsp;
+            &nbsp;
+            <a href="boutique.html" class="removelink">En Boutique</a>&nbsp;
+            &nbsp;&nbsp;
+            <a href="livraison.html" class="removelink">Livraison</a>&nbsp;
+            &nbsp;&nbsp;
+            <a href="a_propos.html" class="removelink">À propos</a>
+        </b></p>
+
+    </nav>
+
+    <main>
+
+        <h2>Passer au paiement:</h2>
+
+        <p>Voici ce que nous offrons en ce qui concerne les livraisons:</p><br>
+
+        <table class="disapear">
+            <tr> 
+       	        <th>Lieux de livraison:</th>
+       	        <td>directement à la maison, au travail ou autre endroit
+       	            de votre choix
+       	        </td>
+       	    </tr>
+       	    <tr>
+       	        <th>Aire de livraison:</th>
+       	        <td>Nous livrons nos produits partout au Québec, même
+       	            au Nord!
+       	        </td> 
+       	    </tr>
+       	    <tr>
+       	        <th>Coûts et types de livraison:</th>
+       	        <td><b>Express</b> (1-3 jours de semaine, <i>109.99$</i>)<br><br>
+       	            <b>Premium</b> (4-6 jours de semaine, <i>89.99$</i>)<br><br>
+       	            <b>Standard</b> (6-10 jours de semaine, <i>69.99$</i>)<br><br>
+       	            <b>Économique</b> (10-14 jours de semaine, <i>49.99$</i>)
+       	        </td>
+            </tr>
+       	    <tr>
+       	        <th>À noter:</th>
+       	        <td>À l'achat de 5 produits ou plus, nous vous offrons une livraison
+       	            gratuite!
+       	        </td> 
+       	    </tr>
+       	</table>
+
+        <ul class="appear">
+       	    <b><li>Lieux de livraison:</b>
+       	        <ul>
+       	            <li>directement à la maison, au travail ou autre endroit
+       	            de votre choix</li><br>
+       	        </ul>
+       	    </li><br>
+       	    <b><li>Aire de livraison:</b>
+       	        <ul>
+       	            <li>Nous livrons nos produits partout au Québec, même
+       	            au Nord!</li><br>
+       	        </ul>
+       	    </li><br>
+       	    <b><li>Coûts et types de livraison:</b>
+       	        <ol type="i">
+       	            <li><i>Express</i> (1-3 jours de semaine, <i>109.99$</i>)</li>
+       	            <li><i>Premium</i> (4-6 jours de semaine, <i>89.99$</i>)</li>
+       	            <li><i>Standard</i> (6-10 jours de semaine, <i>69.99$</i>)</li>
+       	            <li><i>Économique</i> (10-14 jours de semaine, <i>49.99$</i>)</li><br>
+       	        </ol>
+       	    </li>
+        </ul>
+
+        <p>Veuillez s'il vous plait remplir la totalité des informations requises
+       	    ci-dessous pour achever le paiement.</p>
+
+       	<form method="post" action="https://webdevbasics.net/scripts/javajam8.php" class="left">
+
+            <input type="checkbox" name="confirmation d'achat" value="oui" checked="checked" required>
+             Je confirme l'achat de ce(s) produit(s).<br><br>
+            <input type="checkbox" name="connaissance des termes et conditions" value="oui" required>
+             J'ai lu et accepté les termes et conditions concernant
+             l'achat de ce(s) produit(s)<br><br>
+            <input type="checkbox" name="abonnement" value="oui">
+             Je souhaite m'abonner et recevoir des <b>offres exclusives</b> 
+             de <b><i>Meubles Élites Québec</b></i><br><br>
+
+            <h4>Choisissez un type de livraison parmi les suivants:</h4>
+
+            <input type="radio" name="livraison" value="express" checked> Express<br><br>
+            <input type="radio" name="livraison" value="premium"> Premium<br><br>
+            <input type="radio" name="livraison" value="standard"> Standard<br><br>
+            <input type="radio" name="livraison" value="economique"> Économique<br><br>
+
+            <h4>Remplissez le formulaire ci-dessous:</h4>
+
+            <label for="name" >*Votre nom: </label>
+            <input type="text" class="block" name="nom" 
+            required="required"><br>
+		
+            <label for="adresse" >*Adresse de livraison: </label>
+            <input type="text" class="block" name="adresse" 
+            required="required"><br>
+
+            <label for="carte" >*Carte crédit (numéro): </label>
+            <input type="number" class="block" name="carte de crédit" 
+            required="required"><br>
+		
+            <label for="produit">*Nom et identifiant du (ou des) produit(s): </label>
+            <textarea name="produit" class="block" rows="4" 
+            cols="40" required="required">
+            </textarea><br>
+		
+            <input type="submit" value="Soumettre" id="mySubmit">
+        </form>
+
+    </main>
+
+    <footer>
+
+        <p>Suivez-nous sur les réseaux sociaux pour ne pas manquer les
+            nouveautés!</p>
+
+        <p><b>Facebook:</b> <i>Meubles Élites Québec</i> ;<br>
+        <b>Instagram:</b> @meubles_elites_qbc ;<br>
+        <b>Snapchat:</b> meubles_elites_qbc ;<br>
+        <b>Twitter:</b> @meubles_elites_qbc</p>	
+
+    </footer>
+
+</body>
+
+</html>
